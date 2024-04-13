@@ -1,3 +1,7 @@
    # askgit
 venv_ask
 .idea
+.env
+build
+dist
+UNKNOWN.egg-info
