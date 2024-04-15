@@ -3,7 +3,7 @@ name: Health Check
 on: workflow_dispatch
 
 jobs:
-  health_check:
+  healthcheck:
     on: ubuntu-latest
 
     steps:
