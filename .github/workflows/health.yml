@@ -1,16 +1,14 @@
-name: Health Check
+name: Health Check Test
 
 on: workflow_dispatch
 
 jobs:
   healthcheck:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu:latest
 
     steps:
-      - name: Checkout
+      - name: GitHub Checkout
         uses: actions/checkout@v3
       - name: Run docker-compose
-#        env:
-#          DB_USER: ${{ secret.DB_USER }}
         run: |
           docker-compose up --exit-code-from healthcheck || true
