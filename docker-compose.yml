@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  health_check:
+  healthcheck:
     image: python:3.12.0a4-alpine3.17
     build:
       context: .

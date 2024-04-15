@@ -13,4 +13,4 @@ jobs:
 #        env:
 #          DB_USER: ${{ secret.DB_USER }}
         run: |
-          docker-compose up --exit-code-from health_check || true
+          docker-compose up --exit-code-from healthcheck || true
