@@ -1,13 +1,12 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  healthcheck:
+  helthcheck:
     image: python:3.12.0a4-alpine3.17
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "pytest -m health"
-    working_dir: /automation
+    command: /bin/sh -c "ls -la && pytest -m health"
 

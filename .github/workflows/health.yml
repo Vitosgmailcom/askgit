@@ -1,4 +1,4 @@
-name: Health Check Test
+name: Running Health Check
 
 on: workflow_dispatch
 
@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: GitHub Checkout
+      - name: Checkout
         uses: actions/checkout@v3
-      - name: Run docker-compose
+      - name: Running docker-compose and tests
         run: |
-          docker-compose up --exit-code-from healthcheck || true
+          docket-compose up --exit-code-from helthcheck || true
