@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v3
       - name: Running docker-compose and tests
         run: |
-          docket-compose up --exit-code-from helthcheck || true
+          docker-compose up --exit-code-from helthcheck || true
