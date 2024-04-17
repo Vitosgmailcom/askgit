@@ -1,6 +1,7 @@
 name: Running Health Check
 
-on: workflow_dispatch
+on: push
+#workflow_dispatch
 
 jobs:
   healthcheck:

@@ -5,22 +5,22 @@ load_dotenv()
 
 def Credentials():
 
-    DB_USER = os.environ["DB_USER"]
-    DB_PASS = os.environ["DB_PASS"]
-    DB_NAME = os.environ["DB_NAME"]
-    DB_PORT = os.environ["DB_PORT"]
-    DB_HOST = os.environ["DB_HOST"]
+    db_user = os.getenv("DB_USER")
+    db_pass = os.getenv("DB_PASS")
+    db_name = os.getenv("DB_NAME")
+    db_port = os.getenv("DB_PORT")
+    db_host = os.getenv("DB_HOST")
 
     if not DB_USER and not DB_PASS:
         raise Exception(f"DB_USER and DB_PASS must be set")
     else:
         credent_info = {
 
-            "db_user": DB_USER,
-            "db_pass": DB_PASS,
-            "db_name": DB_NAME,
-            "db_port": DB_PORT,
-            "db_host": DB_HOST
+            "db_user": db_user,
+            "db_pass": db_pass,
+            "db_name": db_name,
+            "db_port": db_port,
+            "db_host": db_host
         }
         return credent_info
 
