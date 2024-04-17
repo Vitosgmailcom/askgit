@@ -10,5 +10,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Running docker-compose and tests
+        env:
+          DB_USER: ${{ secret.DB_USER }}
+          DB_PASS: ${{ secret.DB_PASS }}
+          DB_NAME: ${{ secret.DB_NAME }}
+          DB_PORT: ${{ secret.DB_PORT }}
+          DB_HOST: ${{ secret.DB_HOST }}
+
         run: |
           docker-compose up --exit-code-from helthcheck || true
