@@ -11,7 +11,7 @@ def Credentials():
     db_port = os.getenv("DB_PORT")
     db_host = os.getenv("DB_HOST")
 
-    if not DB_USER and not DB_PASS:
+    if not db_user and not db_pass:
         raise Exception(f"DB_USER and DB_PASS must be set")
     else:
         credent_info = {
