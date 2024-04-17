@@ -11,8 +11,8 @@ services:
     command: /bin/sh -c "ls -la && pytest -m db2"
     environment:
       - DB_USER=${DB_USER}
-      - DB_PASS=${DB_USER}
-      - DB_NAME=${DB_USER}
-      - DB_PORT=${DB_USER}
-      - DB_HOST=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_NAME=${DB_NAME}
+      - DB_PORT=${DB_PORT}
+      - DB_HOST=${DB_HOST}
 
