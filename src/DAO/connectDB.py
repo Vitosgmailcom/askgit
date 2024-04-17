@@ -9,13 +9,13 @@ import logging as log
 class ConnectDB(object):
     def __init__(self):
         self.cred = Credentials()
-
+        self.port = int(self.cred['db_port'])
     def connect(self):
         connection = pymysql.connect(
             user=self.cred['db_user'],
             password=self.cred['db_pass'],
             database=self.cred['db_name'],
-            port=int(self.cred['db_port']),
+            port=self.port,
             host=self.cred['db_host']
             )
 
