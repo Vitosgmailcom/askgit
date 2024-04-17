@@ -15,7 +15,7 @@ class ConnectDB(object):
             user=self.cred['db_user'],
             password=self.cred['db_pass'],
             database=self.cred['db_name'],
-            port=int(self.cred['db_port']),
+            port=self.cred['db_port'],
             host=self.cred['db_host']
             )
 
