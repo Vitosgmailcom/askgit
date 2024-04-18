@@ -1,12 +1,12 @@
 {
-  "uid" : "7fddd571648eeb0b",
+  "uid" : "b7d357886455b872",
   "name" : "test_checkDB_connection_1",
   "fullName" : "tests.health_check.test_connectionDB.TestConnectionDB#test_checkDB_connection_1",
   "historyId" : "770aa2ee5b3e63f5d9335c836b9098a7",
   "time" : {
-    "start" : 1713409828335,
-    "stop" : 1713409828810,
-    "duration" : 475
+    "start" : 1713410157167,
+    "stop" : 1713410157624,
+    "duration" : 457
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,8 +14,8 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1713409828334,
-      "stop" : 1713409828334,
+      "start" : 1713410157166,
+      "stop" : 1713410157166,
       "duration" : 0
     },
     "status" : "passed",
@@ -31,11 +31,11 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "40fc016d678dfaa8",
+      "uid" : "fca94acbb676a5c7",
       "name" : "log",
-      "source" : "40fc016d678dfaa8.txt",
+      "source" : "fca94acbb676a5c7.txt",
       "type" : "text/plain",
-      "size" : 370
+      "size" : 369
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -61,7 +61,7 @@
     "value" : "TestConnectionDB"
   }, {
     "name" : "host",
-    "value" : "643dc492b7fb"
+    "value" : "42e241ee1715"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -88,6 +88,6 @@
     "categories" : [ ],
     "tags" : [ "db1", "db2" ]
   },
-  "source" : "7fddd571648eeb0b.json",
+  "source" : "b7d357886455b872.json",
   "parameterValues" : [ ]
 }
