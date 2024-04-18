@@ -22,10 +22,11 @@ jobs:
       - name: Generate Allure Report
         run: |
           sudo docker-compose run test /bin/sh -c "allure generate allure-results --clean -o allure-report"
-      - name: Deploy to GitHub pages
-        uses: JamesIves/github-pages-deploy-action@v4
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
-          folder: allure-reports
+          folder: allure-report
           clean: true
