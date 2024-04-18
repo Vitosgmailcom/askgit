@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "tests.health_check.test_connectionDB",
+    "children" : [ {
+      "name" : "test_checkDB_connection_1",
+      "uid" : "7fddd571648eeb0b",
+      "parentUid" : "de4914f45ce350511ab3aaee1d30cbd2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713409828335,
+        "stop" : 1713409828810,
+        "duration" : 475
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "tests.health_check.test_connectionDB"
+  } ],
+  "name" : "packages"
+}

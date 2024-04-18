@@ -1,0 +1,93 @@
+{
+  "uid" : "7fddd571648eeb0b",
+  "name" : "test_checkDB_connection_1",
+  "fullName" : "tests.health_check.test_connectionDB.TestConnectionDB#test_checkDB_connection_1",
+  "historyId" : "770aa2ee5b3e63f5d9335c836b9098a7",
+  "time" : {
+    "start" : 1713409828335,
+    "stop" : 1713409828810,
+    "duration" : 475
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1713409828334,
+      "stop" : 1713409828334,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "40fc016d678dfaa8",
+      "name" : "log",
+      "source" : "40fc016d678dfaa8.txt",
+      "type" : "text/plain",
+      "size" : 370
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "db2"
+  }, {
+    "name" : "tag",
+    "value" : "db1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.health_check"
+  }, {
+    "name" : "suite",
+    "value" : "test_connectionDB"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConnectionDB"
+  }, {
+    "name" : "host",
+    "value" : "643dc492b7fb"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.health_check.test_connectionDB"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "db1", "db2" ]
+  },
+  "source" : "7fddd571648eeb0b.json",
+  "parameterValues" : [ ]
+}

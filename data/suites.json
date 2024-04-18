@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests.health_check",
+    "children" : [ {
+      "name" : "test_connectionDB",
+      "children" : [ {
+        "name" : "TestConnectionDB",
+        "children" : [ {
+          "name" : "test_checkDB_connection_1",
+          "uid" : "7fddd571648eeb0b",
+          "parentUid" : "63693cedf781c3348d91b62a49d60999",
+          "status" : "passed",
+          "time" : {
+            "start" : 1713409828335,
+            "stop" : 1713409828810,
+            "duration" : 475
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "63693cedf781c3348d91b62a49d60999"
+      } ],
+      "uid" : "0627d6c990727a12f5a81e9841fcd161"
+    } ],
+    "uid" : "650c1781c289e22c192c4eae281c09cd"
+  } ],
+  "name" : "suites"
+}
