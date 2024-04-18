@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Apr 18 03:15:57 GMT 2024","Thu Apr 18 03:15:57 GMT 2024","457","tests.health_check","test_connectionDB","TestConnectionDB","","","test_checkDB_connection_1",""
+"passed","Thu Apr 18 03:22:59 GMT 2024","Thu Apr 18 03:22:59 GMT 2024","47","tests.health_check","test_connectionDB","TestConnectionDB","","","test_checkDB_connection_1",""
