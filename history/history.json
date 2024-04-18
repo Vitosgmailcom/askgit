@@ -1,14 +1,23 @@
 {
   "770aa2ee5b3e63f5d9335c836b9098a7" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "58db6649b900d592",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: Error\nassert 'APG777' == 'APG77'\n  \n  - APG77\n  + APG777\n  ?      +",
+      "time" : {
+        "start" : 1713411269364,
+        "stop" : 1713411269410,
+        "duration" : 46
+      }
+    }, {
       "uid" : "5f92059688d3a7d",
       "status" : "passed",
       "time" : {

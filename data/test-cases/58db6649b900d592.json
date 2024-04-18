@@ -1,0 +1,128 @@
+{
+  "uid" : "58db6649b900d592",
+  "name" : "test_checkDB_connection_1",
+  "fullName" : "tests.health_check.test_connectionDB.TestConnectionDB#test_checkDB_connection_1",
+  "historyId" : "770aa2ee5b3e63f5d9335c836b9098a7",
+  "time" : {
+    "start" : 1713411269364,
+    "stop" : 1713411269410,
+    "duration" : 46
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Error\nassert 'APG777' == 'APG77'\n  \n  - APG77\n  + APG777\n  ?      +",
+  "statusTrace" : "self = <tests.health_check.test_connectionDB.TestConnectionDB object at 0x7f85ae4a93d0>\n\n    @pytest.mark.db2\n    def test_checkDB_connection_1(self):\n        result = self.db_helper.random_email_from_DB(1, self.sql.random_user_sql())\n        log.info(result[0])\n>       assert result[0]['group'] == 'APG77', f\"Error\"\nE       AssertionError: Error\nE       assert 'APG777' == 'APG77'\nE         \nE         - APG77\nE         + APG777\nE         ?      +\n\ntests/health_check/test_connectionDB.py:15: AssertionError",
+  "flaky" : false,
+  "newFailed" : true,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1713411269363,
+      "stop" : 1713411269363,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Error\nassert 'APG777' == 'APG77'\n  \n  - APG77\n  + APG777\n  ?      +",
+    "statusTrace" : "self = <tests.health_check.test_connectionDB.TestConnectionDB object at 0x7f85ae4a93d0>\n\n    @pytest.mark.db2\n    def test_checkDB_connection_1(self):\n        result = self.db_helper.random_email_from_DB(1, self.sql.random_user_sql())\n        log.info(result[0])\n>       assert result[0]['group'] == 'APG77', f\"Error\"\nE       AssertionError: Error\nE       assert 'APG777' == 'APG77'\nE         \nE         - APG77\nE         + APG777\nE         ?      +\n\ntests/health_check/test_connectionDB.py:15: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "31af2e5abb0acd0a",
+      "name" : "log",
+      "source" : "31af2e5abb0acd0a.txt",
+      "type" : "text/plain",
+      "size" : 370
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "db2"
+  }, {
+    "name" : "tag",
+    "value" : "db1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.health_check"
+  }, {
+    "name" : "suite",
+    "value" : "test_connectionDB"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConnectionDB"
+  }, {
+    "name" : "host",
+    "value" : "26707a5d0cd1"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.health_check.test_connectionDB"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "5f92059688d3a7d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713411125051,
+          "stop" : 1713411125209,
+          "duration" : 158
+        }
+      }, {
+        "uid" : "2f4725a5c08983e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713410579140,
+          "stop" : 1713410579187,
+          "duration" : 47
+        }
+      } ]
+    },
+    "tags" : [ "db1", "db2" ]
+  },
+  "source" : "58db6649b900d592.json",
+  "parameterValues" : [ ]
+}

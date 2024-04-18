@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Error\nassert 'APG777' == 'APG77'\n  \n  - APG77\n  + APG777\n  ?      +",
+      "children" : [ {
+        "name" : "test_checkDB_connection_1",
+        "uid" : "58db6649b900d592",
+        "parentUid" : "8955ceca7f2c34b48e3c89dadc383a12",
+        "status" : "failed",
+        "time" : {
+          "start" : 1713411269364,
+          "stop" : 1713411269410,
+          "duration" : 46
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8955ceca7f2c34b48e3c89dadc383a12"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }
