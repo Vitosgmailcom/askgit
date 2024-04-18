@@ -8,7 +8,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "ls -ls && pytest -m db2"
+    command: /bin/sh -c "ls -ls && pytest -m db2 --alluredir=allure-results"
+    working_dir: /automation
 
     environment:
      - DB_USER=${DB_USER}

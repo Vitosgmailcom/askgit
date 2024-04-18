@@ -1,7 +1,11 @@
    # askgit
 venv_ask
+.pytest_cash
 .idea
 .env
 build
 dist
 UNKNOWN.egg-info
+allure-result
+allure-results
+*.iml

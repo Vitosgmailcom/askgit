@@ -18,3 +18,14 @@ jobs:
           DB_HOST: ${{ secrets.DB_HOST }}
         run: |
           docker-compose up --exit-code-from test || true
+
+      - name: Generate Allure Report
+        run: |
+          sudo docker-compose run test /bin/sh -c "allure generate allure-results --clean -o allure-report"
+      - name: Deploy to GitHub pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.CI_TOKEN }}
+          branch: gh-pages
+          folder: allure-reports
+          clean: true
