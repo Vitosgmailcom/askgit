@@ -4,16 +4,16 @@
     "name" : "tests.health_check.test_connectionDB",
     "children" : [ {
       "name" : "test_checkDB_connection_1",
-      "uid" : "58db6649b900d592",
+      "uid" : "6b85dd5f03de10b5",
       "parentUid" : "de4914f45ce350511ab3aaee1d30cbd2",
-      "status" : "failed",
+      "status" : "passed",
       "time" : {
-        "start" : 1713411269364,
-        "stop" : 1713411269410,
-        "duration" : 46
+        "start" : 1713411497824,
+        "stop" : 1713411497868,
+        "duration" : 44
       },
       "flaky" : false,
-      "newFailed" : true,
+      "newFailed" : false,
       "parameters" : [ ]
     } ],
     "uid" : "tests.health_check.test_connectionDB"

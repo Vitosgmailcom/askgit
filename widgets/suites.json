@@ -4,10 +4,10 @@
     "uid" : "650c1781c289e22c192c4eae281c09cd",
     "name" : "tests.health_check",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     }

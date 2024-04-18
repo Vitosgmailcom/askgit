@@ -8,16 +8,16 @@
         "name" : "TestConnectionDB",
         "children" : [ {
           "name" : "test_checkDB_connection_1",
-          "uid" : "58db6649b900d592",
+          "uid" : "6b85dd5f03de10b5",
           "parentUid" : "63693cedf781c3348d91b62a49d60999",
-          "status" : "failed",
+          "status" : "passed",
           "time" : {
-            "start" : 1713411269364,
-            "stop" : 1713411269410,
-            "duration" : 46
+            "start" : 1713411497824,
+            "stop" : 1713411497868,
+            "duration" : 44
           },
           "flaky" : false,
-          "newFailed" : true,
+          "newFailed" : false,
           "parameters" : [ ]
         } ],
         "uid" : "63693cedf781c3348d91b62a49d60999"
