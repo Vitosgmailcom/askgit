@@ -6,6 +6,12 @@ from src.SQL_Statements.SQL_Statements import SqlStatements
 import pytest
 
 class BaseTest:
+    """
+    Sets up the necessary fixtures for the test.
+
+    :param request: The test request object from pytest.
+    :type request: _pytest.fixtures.FixtureRequest
+    """
     db_helper: HelperDB
     connectDB: ConnectDB
     sql: SqlStatements

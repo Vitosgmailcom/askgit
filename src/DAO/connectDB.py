@@ -7,6 +7,7 @@ import pymysql.cursors
 import logging as log
 
 class ConnectDB(object):
+
     def __init__(self):
         self.cred = Credentials()
         self.port = int(self.cred['db_port'])
