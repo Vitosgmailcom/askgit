@@ -12,6 +12,7 @@ services:
       - ./:/automation
 
     command: /bin/sh -c "ls -ls && pytest -m db2 --alluredir=allure-results"
+
     environment:
       - DB_USER=${DB_USER}
       - DB_PASS=${DB_PASS}
