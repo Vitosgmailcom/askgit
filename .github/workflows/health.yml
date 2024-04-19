@@ -1,17 +1,16 @@
-name: Run with GitHib Actions
+name: Health check
 
 on: push
 
 jobs:
-  autotest:
+  regression:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: Checkout (copy) gh-pages repository to GitHub runner
-        uses: actions/checkout@v2
+      - name: Checkout gh-pages
+        uses: actions/checkout@v3
         with:
           ref: gh-pages
           path: ./.github/gh-pages
@@ -26,23 +25,24 @@ jobs:
         run: |
           docker-compose up --exit-code-from test || true
 
-      - name: Copy history from gh-pages to allure-results
+      - name: Copy Allure history
         run: |
-          sudo mkdir -p allure-results/history  # Создает директорию для истории Allure
+          sudo mkdir -p allure-results/history
           sudo cp -R ./.github/gh-pages/history/* allure-results/history/
 
-      - name: Generate Allure Report
-        run: |
-          sudo docker-compose run test /bin/sh -c "allure generate allure-results --clean -o allure-report"
 
-      - name: Update Allure history
+      - name: Generate Allure report
         run: |
-          sudo cp -R allure-report/history/* ./.github/gh-pages/history/
+          docker-compose run /bin/sh -c "allure generate allure-results --clean -o allure-reports"
+
+      - name: Copy from Allure reports to gh-pages
+        run: |
+          sudo cp -R allure-reports/history/* ./.github/gh-pages/history
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }}
-          branch: gh-pages
-          folder: allure-report
-          clean: true
+#          branch: gh-pages
+          folder: allure-reports
+#          clean: true

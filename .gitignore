@@ -9,3 +9,4 @@ UNKNOWN.egg-info
 allure-result
 allure-results
 *.iml
+.github/workflows/test.yml
