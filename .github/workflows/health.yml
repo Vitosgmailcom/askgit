@@ -1,4 +1,4 @@
-name: Health check
+name: Auto test
 
 on: push
 
@@ -14,7 +14,6 @@ jobs:
         with:
           ref: gh-pages
           path: ./.github/gh-pages
-
       - name: Run docker-compose
         env:
           DB_USER: ${{ secrets.DB_USER }}
@@ -25,25 +24,22 @@ jobs:
         run: |
           docker-compose up --exit-code-from test || true
 
-      - name: Copy Allure history
+      - name: Copy from gh-pages to report
         run: |
           sudo mkdir -p allure-results/history
           sudo cp -R ./.github/gh-pages/history/* allure-results/history/
 
-
       - name: Generate Allure report
         run: |
           docker-compose run test /bin/sh -c "allure generate allure-results --clean -o allure-reports"
-          
 
-      - name: Copy from Allure reports to gh-pages
+      - name: Copy to gh-pages
         run: |
-          sudo cp -R allure-reports/history/* ./.github/gh-pages/history
+          sudo cp -R allure-reports/history/* ./.github/gh-pages/history/
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy Allure report
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
           folder: allure-reports
-#          clean: true
