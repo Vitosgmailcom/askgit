@@ -26,7 +26,7 @@ jobs:
           docker-compose up --exit-code-from regression || true
       - name: Copy history from gh-pages
         run: |
-          sudo makdir -p allure-results/history
+          sudo mkdir -p allure-results/history
           sudo -R ./.github/gh-pages/history/* allure-results/history/
       - name: Generate Allure report
         run: |
