@@ -1,10 +1,10 @@
 [ {
-  "uid" : "b26e12d555c15b37",
+  "uid" : "859c1e733c980c6f",
   "name" : "test_checkDB_connection_1",
   "time" : {
-    "start" : 1713495062001,
-    "stop" : 1713495062156,
-    "duration" : 155
+    "start" : 1713495597283,
+    "stop" : 1713495597327,
+    "duration" : 44
   },
   "status" : "passed",
   "severity" : "normal"
