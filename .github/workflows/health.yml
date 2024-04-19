@@ -17,7 +17,7 @@ jobs:
       - name: Run docker-compose up
 
         env:
-          DB_USER: ${{ secrets.US_USER }}
+          DB_USER: ${{ secrets.DB_USER }}
           DB_PASS: ${{ secrets.DB_PASS }}
           DB_NAME: ${{ secrets.DB_NAME }}
           DB_PORT: ${{ secrets.DB_PORT }}
@@ -28,6 +28,7 @@ jobs:
         run: |
           sudo mkdir -p allure-results/history
           sudo cp -R ./.github/gh-pages/history/* allure-results/history/
+
       - name: Generate Allure report
         run: |
           docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-reports"
