@@ -33,7 +33,8 @@ jobs:
 
       - name: Generate Allure report
         run: |
-          docker-compose run /bin/sh -c "allure generate allure-results --clean -o allure-reports"
+          docker-compose run test /bin/sh -c "allure generate allure-results --clean -o allure-reports"
+          
 
       - name: Copy from Allure reports to gh-pages
         run: |
