@@ -8,13 +8,13 @@
         "name" : "TestConnectionDB",
         "children" : [ {
           "name" : "test_checkDB_connection_1",
-          "uid" : "6b85dd5f03de10b5",
+          "uid" : "1e683aefa90cb240",
           "parentUid" : "63693cedf781c3348d91b62a49d60999",
           "status" : "passed",
           "time" : {
-            "start" : 1713411497824,
-            "stop" : 1713411497868,
-            "duration" : 44
+            "start" : 1713493188709,
+            "stop" : 1713493189138,
+            "duration" : 429
           },
           "flaky" : false,
           "newFailed" : false,

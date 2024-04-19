@@ -1,12 +1,12 @@
 {
-  "uid" : "6b85dd5f03de10b5",
+  "uid" : "1e683aefa90cb240",
   "name" : "test_checkDB_connection_1",
   "fullName" : "tests.health_check.test_connectionDB.TestConnectionDB#test_checkDB_connection_1",
   "historyId" : "770aa2ee5b3e63f5d9335c836b9098a7",
   "time" : {
-    "start" : 1713411497824,
-    "stop" : 1713411497868,
-    "duration" : 44
+    "start" : 1713493188709,
+    "stop" : 1713493189138,
+    "duration" : 429
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,8 +14,8 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1713411497823,
-      "stop" : 1713411497823,
+      "start" : 1713493188709,
+      "stop" : 1713493188709,
       "duration" : 0
     },
     "status" : "passed",
@@ -31,9 +31,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "32e3d065fd92cf89",
+      "uid" : "7d85ed4fcc1fd637",
       "name" : "log",
-      "source" : "32e3d065fd92cf89.txt",
+      "source" : "7d85ed4fcc1fd637.txt",
       "type" : "text/plain",
       "size" : 370
     } ],
@@ -61,7 +61,7 @@
     "value" : "TestConnectionDB"
   }, {
     "name" : "host",
-    "value" : "960ec3c0810e"
+    "value" : "0dcab576c53f"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -91,11 +91,19 @@
         "failed" : 1,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 3,
+        "passed" : 4,
         "unknown" : 0,
-        "total" : 4
+        "total" : 5
       },
       "items" : [ {
+        "uid" : "6b85dd5f03de10b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713411497824,
+          "stop" : 1713411497868,
+          "duration" : 44
+        }
+      }, {
         "uid" : "58db6649b900d592",
         "status" : "failed",
         "statusDetails" : "AssertionError: Error\nassert 'APG777' == 'APG77'\n  \n  - APG77\n  + APG777\n  ?      +",
@@ -124,6 +132,6 @@
     },
     "tags" : [ "db1", "db2" ]
   },
-  "source" : "6b85dd5f03de10b5.json",
+  "source" : "1e683aefa90cb240.json",
   "parameterValues" : [ ]
 }
