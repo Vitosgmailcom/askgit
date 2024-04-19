@@ -23,7 +23,7 @@ jobs:
           DB_PORT: ${{ secrets.DB_PORT }}
           DB_HOST: ${{ secrets.DB_HOST }}
         run: |
-          docker-compose up --exit-code-from test || true
+          docker-compose up --exit-code-from regression || true
 
       - name: Copy Allure history
         run: |
@@ -33,7 +33,7 @@ jobs:
 
       - name: Generate Allure report
         run: |
-          docker-compose run test /bin/sh -c "allure generate allure-results --clean -o allure-reports"
+          docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-reports"
 
 
       - name: Copy from Allure reports to gh-pages
