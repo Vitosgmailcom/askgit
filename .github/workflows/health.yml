@@ -1,4 +1,4 @@
-name: Run Health CHeck Tests
+name: Running Healthcheck test
 
 on: push
 
@@ -9,42 +9,40 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Checkout gh-pages
         uses: actions/checkout@v3
         with:
           ref: gh-pages
           path: ./.github/gh-pages
-      - name: Run docker-compose up
 
+      - name: Running docker-compose
         env:
           DB_USER: ${{ secrets.DB_USER }}
           DB_PASS: ${{ secrets.DB_PASS }}
           DB_NAME: ${{ secrets.DB_NAME }}
           DB_PORT: ${{ secrets.DB_PORT }}
           DB_HOST: ${{ secrets.DB_HOST }}
+
         run: |
           docker-compose up --exit-code-from regression || true
-      - name: Copy history from gh-pages
+
+      - name: Copy from gh-pages
         run: |
           sudo mkdir -p allure-results/history
           sudo cp -R ./.github/gh-pages/history/* allure-results/history/
-
-
-
 
       - name: Generate Allure report
         run: |
           docker-compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-reports"
 
-      - name: Copy history to gh-pages
+      - name: Copy to gh-pages
         run: |
           sudo cp -R allure-reports/history/* ./.github/gh-pages/history/
 
-      - name: Deploy Allure report to gh-pages
+      - name: Deploy gh-pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
           folder: allure-reports
-
-
