@@ -1,12 +1,12 @@
 {
-  "uid" : "2ef86c4fcea3bfc9",
+  "uid" : "aa950a5d9a2adb04",
   "name" : "test_checkDB_connection_1",
   "fullName" : "tests.health_check.test_connectionDB.TestConnectionDB#test_checkDB_connection_1",
   "historyId" : "770aa2ee5b3e63f5d9335c836b9098a7",
   "time" : {
-    "start" : 1713624065558,
-    "stop" : 1713624065616,
-    "duration" : 58
+    "start" : 1713651030205,
+    "stop" : 1713651030653,
+    "duration" : 448
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,8 +14,8 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1713624065558,
-      "stop" : 1713624065558,
+      "start" : 1713651030204,
+      "stop" : 1713651030204,
       "duration" : 0
     },
     "status" : "passed",
@@ -31,9 +31,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "66d6cc2733b43b39",
+      "uid" : "67a8f64155184471",
       "name" : "log",
-      "source" : "66d6cc2733b43b39.txt",
+      "source" : "67a8f64155184471.txt",
       "type" : "text/plain",
       "size" : 370
     } ],
@@ -61,7 +61,7 @@
     "value" : "TestConnectionDB"
   }, {
     "name" : "host",
-    "value" : "db5ec1e61685"
+    "value" : "d5d077c2b1d6"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -91,11 +91,19 @@
         "failed" : 1,
         "broken" : 0,
         "skipped" : 0,
-        "passed" : 9,
+        "passed" : 10,
         "unknown" : 0,
-        "total" : 10
+        "total" : 11
       },
       "items" : [ {
+        "uid" : "2ef86c4fcea3bfc9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713624065558,
+          "stop" : 1713624065616,
+          "duration" : 58
+        }
+      }, {
         "uid" : "5b15eb527ab13dc",
         "status" : "passed",
         "time" : {
@@ -172,6 +180,6 @@
     },
     "tags" : [ "db1", "db2" ]
   },
-  "source" : "2ef86c4fcea3bfc9.json",
+  "source" : "aa950a5d9a2adb04.json",
   "parameterValues" : [ ]
 }

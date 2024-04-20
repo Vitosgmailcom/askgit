@@ -1,0 +1,1 @@
+INFO     root:test_connectionDB.py:14 {'id': 29510, 'email': 'test_user_uodj@vitos.com', 'name': 'Will Smith', 'password': '70ccd9007338d6d81dd3b6271621b9cf9a97ea00', 'group': 'APG777', 'active': 1, 'activationCode': None, 'role': 'STUDENT', 'avatar': None, 'createdAt': datetime.datetime(2024, 2, 18, 21, 14, 39), 'updatedAt': datetime.datetime(2024, 3, 12, 2, 51, 37)}
