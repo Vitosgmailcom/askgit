@@ -10,5 +10,5 @@ setup(version="1.1",
           "chardet==5.2.0",
           "python-dotenv==1.0.1"
 
-      ]
+      ] #
       )
