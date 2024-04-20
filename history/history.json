@@ -4,11 +4,19 @@
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 9
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "2ef86c4fcea3bfc9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713624065558,
+        "stop" : 1713624065616,
+        "duration" : 58
+      }
+    }, {
       "uid" : "5b15eb527ab13dc",
       "status" : "passed",
       "time" : {
